@@ -1,7 +1,13 @@
 function App() {
   return (
     <>
-      <p>Cryptos</p>
+      <div className="container">
+        <h1 className="app-tittle">Cotizador de
+          <span>Criptomonedas</span></h1>
+        <div className="content">
+
+        </div>
+      </div>
     </>
   )
 }
