@@ -18,3 +18,10 @@ export const cryptoSchemas = z.array(cryptoSchema)
 
 export type cryptoSchemaType = z.infer<typeof cryptoSchema>
 export type cryptoSchemasType = z.infer<typeof cryptoSchemas>[]
+
+export const PairCurrency = z.object({
+    criptocurrency: z.string(),
+    currency: z.string()
+})
+
+export type PairCurrencyType = z.infer<typeof PairCurrency>
