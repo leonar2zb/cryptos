@@ -27,5 +27,12 @@ export const PairCurrency = z.object({
 export type PairCurrencyType = z.infer<typeof PairCurrency>
 
 export const TradingInfo = z.object({
-   
+    "IMAGEURL": z.string(),
+    "PRICE": z.string(),
+    "HIGHDAY": z.string(),
+    "LOWDAY": z.string(),
+    "CHANGE24HOUR": z.string(),
+    "LASTUPDATE": z.string()
 })
+
+export type TradingInfoType = z.infer<typeof TradingInfo>
