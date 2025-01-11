@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
+import './Error.css'
 
 export default function Error({ children }: { children: ReactNode }) {
-    return (<>{children}</>)
+    return (<div className="error_container">{children}</div>)
 }
