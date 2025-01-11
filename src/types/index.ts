@@ -25,3 +25,7 @@ export const PairCurrency = z.object({
 })
 
 export type PairCurrencyType = z.infer<typeof PairCurrency>
+
+export const TradingInfo = z.object({
+   
+})

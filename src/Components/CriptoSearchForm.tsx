@@ -20,9 +20,10 @@ export default function CriptoSearchForm() {
             return
         }
         setError('')
+        fetchData(pair)
     }
 
-    const { cryptoCurrencies } = useCryptoStore()
+    const { cryptoCurrencies, fetchData } = useCryptoStore()
     return (
         <form className="form" onSubmit={handleSubmit}>
             <div className="field">
