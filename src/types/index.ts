@@ -17,4 +17,4 @@ export const cryptoSchema = z.object({
 export const cryptoSchemas = z.array(cryptoSchema)
 
 export type cryptoSchemaType = z.infer<typeof cryptoSchema>
-export type cryptoSchemasType = z.infer<typeof cryptoSchema>[]
+export type cryptoSchemasType = z.infer<typeof cryptoSchemas>[]
